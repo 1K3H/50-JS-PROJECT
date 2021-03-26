@@ -24,7 +24,7 @@ html.dark {
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,19 +69,15 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
-}
-
-.needle.hour {
-  transform: translate(-50%, -100%) rotate(0deg);
+  transition: all 0.5s ease-in;
+  animation-iteration-count: infinite;
 }
 
 .needle.minute {
-  transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
 }
 
 .needle.second {
-  transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
   background-color: #e74c3c;
 }
@@ -98,7 +94,7 @@ body {
 }
 
 .center-point::after {
-  content: '';
+  content: "";
   background-color: var(--primary-color);
   width: 5px;
   height: 5px;
