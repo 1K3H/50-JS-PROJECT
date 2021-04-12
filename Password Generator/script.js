@@ -14,6 +14,20 @@ const randomFunc = {
   symbol : getRandomSymbol
 }
 
+clipboardBtn.addEventListener('click', () => {
+  const textarea = document.createElement('textarea');
+  const password = resultEl.innerText;
+
+  if(!password) return;
+
+  textarea.value = password;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  textarea.remove();
+  alert('Password is copied to clipboard!');
+});
+
 generateBtn.addEventListener('click', () => {
   const length = +lengthEl.value;
   const hasUpper = uppercaseEl.checked;
@@ -61,4 +75,3 @@ function getRandomSymbol() {
   const symbols = '!@#$%^&*(){}[]=<>/,.-+?~';
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
