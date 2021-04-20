@@ -6,7 +6,7 @@
 
 body {
   background-color: #fef9f2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,8 @@ body {
   margin: 10px 5px;
 }
 
-.rating:hover, .rating.active {
+.rating:hover,
+.rating.active {
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -60,7 +61,8 @@ body {
   margin: 10px 0 0;
 }
 
-.rating:hover small, .rating.active small {
+.rating:hover small,
+.rating.active small {
   color: #111;
 }
 
